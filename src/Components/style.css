@@ -1,0 +1,1326 @@
+body{
+    margin: 0%; 
+    color: #424242;
+    overflow-x: hidden;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    font-style: normal;
+    
+}
+h1{
+    font-size: 3.5rem;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+p{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 350;
+    line-height: 30px;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+button{
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.container{
+    overflow: hidden;
+}
+.heading {
+    padding: 1%;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-top: 1.3%;
+    text-align: center;
+    color: #000000;
+    z-index: 1;
+    background: linear-gradient(to bottom, #fff7ef 50%, white 50%);
+    font-size: 4rem; /* Set your desired font size */
+}
+
+/* Add a media query for smaller screens */
+@media (max-width: 1500px) {
+    .heading {
+        margin-top: 1.2%;/* Adjust the top value for smaller screens */
+    }
+}
+@media (max-width: 1400px) {
+    .heading {
+        margin-top: 1%;/* Adjust the top value for smaller screens */
+    }
+}
+@media (max-width: 1350px) {
+    .heading {
+        margin-top: 1%;/* Adjust the top value for smaller screens */
+    }
+}
+@media (max-width: 1300px) {
+    .heading {
+        margin-top: 0.8%;/* Adjust the top value for smaller screens */
+    }
+}
+@media (max-width: 1200px) {
+    .heading {
+        margin-top: 0.5%;/* Adjust the top value for smaller screens */
+    }
+}
+@media (max-width: 1150px) {
+    .heading {
+        margin-top: 0.3%;/* Adjust the top value for smaller screens */
+    }
+}
+@media (max-width: 1100px) {
+    .heading {
+        margin-top: 0%;/* Adjust the top value for smaller screens */
+    }
+}
+@media (max-width: 1000px) {
+    .heading {
+        margin-top: -0.5%;/* Adjust the top value for smaller screens */
+    }
+}
+@media (max-width: 930px) {
+    .heading {
+        margin-top: -0.5%;/* Adjust the top value for smaller screens */
+    }
+}
+@media (max-width: 903px) {
+    .heading {
+        margin-top: 25%;/* Adjust the top value for smaller screens */
+    }
+}
+@media (max-width: 900px) {
+    .heading {
+        margin-top: -0.75%;/* Adjust the top value for smaller screens */
+    }
+}
+@media (max-width: 850px) {
+    .heading {
+        margin-top: -1%;/* Adjust the top value for smaller screens */
+    }
+}
+@media (max-width: 800px) {
+    .heading {
+        margin-top:-1.25%;/* Adjust the top value for smaller screens */
+    }
+}
+@media (max-width: 750px) {
+    .heading {
+        margin-top: -1.6%;/* Adjust the top value for smaller screens */
+    }
+}
+@media (max-width: 700px) {
+    .heading {
+        margin-top: -2%;
+    }
+}
+@media (max-width: 650px) {
+    .heading {
+        margin-top: -2.5%;
+    }
+}
+@media (max-width: 600px) {
+    .heading {
+        margin-top: -3%;
+    }
+}
+@media (max-width: 550px) {
+    .heading {
+        margin-top: -4%;
+    }
+}
+@media (max-width: 500px) {
+    .heading {
+        margin-top: -5%;
+    }
+}
+
+.NavBar{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-width: 95%;
+    background-color: #fff7ef;
+}
+.Name{
+    border: none;
+    background: none;
+    width: max-content;
+    font-size:1.5rem;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 1.5% ;
+    margin-bottom: 0%;
+    color: rgb(52, 52, 52);
+}
+.logo{
+    width: 10%;
+    margin-top: 0.5%;
+}
+.logo>p{
+    width: 150%;
+    position: relative;
+    left: 40%;
+    margin: 0%;
+    padding: 0%;
+}
+.logo>p>img{
+    height: 70px;
+    width: 70px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.NavItems{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content:right;
+    align-items:flex-end;
+    margin-bottom: 1%;
+    margin-right: 1%;
+}
+.Navigator{
+    border: none;
+    background: none;
+    width: max-content;
+    font-size: 1.25rem;
+    font-family: "Abel", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 1.5%;
+    margin-bottom: 0%;
+    color: rgb(52, 52, 52);
+    transition: all 0.3s;
+}
+
+.Navigator:hover,
+.Navigator.active {
+    color: #14aecf;
+}
+
+.Navigator::after{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    height: 2px;
+    width: 0;
+    left: 5%;
+    background-color: #14aecf;
+    transition: 0.3s;
+}
+
+.Navigator:hover::after,
+.Navigator.active::after {
+    width: 90%;
+}
+
+.Navimg{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1.5px solid red;
+    transition: all 0.2s;
+}
+.Navimg:hover{
+    transform: translateY(-1.5px);
+    opacity: 0.5;
+    border: 1.5px solid blue;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    transform: translateX(0);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9); /* Black background with 70% opacity */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2; /* Ensure it's above other elements */
+    transition: 1s;
+  }
+  .sidebar-button {
+    margin-left: 35%;
+    cursor:pointer;
+  }
+.sidebar-button>button{
+    border: none;
+    background: none;
+    height:50px ;
+    cursor:pointer;
+  }
+  
+  
+  .sidebar > button {
+    background: none;
+    border: none;
+    width: 100%;
+    color: white;
+    margin: 10px;
+    height: 50px;
+    cursor:pointer;
+  }
+  
+  .sidebar > button:hover {
+    color: #000000;
+    background-color: white;
+    width: 60%;
+    border-radius: 25px;
+  }
+.hide{
+    position: fixed;
+    top: 0;
+    transform: translateX(100%);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with 70% opacity */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2; /* Ensure it's above other elements */
+    transition: 1s;
+  }
+   
+  .hide > button {
+    background: none;
+    border: none;
+    width: 100%;
+    color: white;
+    margin: 10px;
+    height: 50px;
+    cursor:pointer;
+  }
+  
+  .hide > button:hover {
+    color: #000000;
+    background-color: white;
+    width: 60%;
+    border-radius: 25px;
+    cursor:pointer;
+  }
+  
+.menu{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    height: 20%;
+    width: 20%;
+    border-radius: 15px;
+    overflow:hidden ;
+    right: 40px;
+}
+.menufirstline{
+    transform: rotate(225deg);
+    position: relative;
+    top: 5px;
+    transform-origin: 50%;
+    width: 40px;
+    transition: ease 1s;
+    z-index: 3;
+}
+.menusecondline{
+    transform: rotate(-225deg);
+    transform-origin: 50%;
+    position: relative;
+    bottom: 2.75px;
+    width: 40px;
+    transition: ease 1s;
+    z-index: 3;
+}
+.menuthirdline{
+    transform: rotate(180deg);
+    transform-origin: 50%;
+    opacity: 0;
+    position: relative;
+    bottom: 12px;
+    left: 1.2px;
+    width: 40px;
+    transition: ease 1.5s;
+    z-index: 3;
+}
+.menunotdropped1{
+    transition: ease 1s;
+    width: 40px;
+}
+.menunotdropped2{
+    transition: ease 1s;
+    width: 40px;
+}
+.menunotdropped3{
+    transition: ease 1.5s;
+    width: 40px;
+}
+.Intro {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    position: relative;
+    top: 0%;
+    overflow: hidden;
+    padding-bottom: 10%;
+}
+.Intro-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-image: linear-gradient(to right, rgb(0, 0, 0,0.75), rgba(0, 0, 0, 0.75)), url('https://paultan.org/image/2019/03/Lamborghini-Aventador-SVJ-Roadster-5.jpg');
+    background-size: cover;
+}
+
+.Intro-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    padding: 3%;
+    background: none; /* Remove background property */
+}
+.Introtext{
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+}
+.Introtext h1 {
+    font-size: 3.5rem; /* Adjust the font size as needed */
+  }
+  
+  @media (max-width: 768px) {
+    .Introtext h1 {
+      font-size: 2.5rem; /* Reduce font size for smaller screens */
+    }
+  }
+
+.words{
+    overflow: hidden; 
+    height: 60px;
+    position: relative;
+    left: 0.5%;
+    top: -10px;
+    width: fit-content;
+    font-size: 250%;
+    font-weight: 200;
+    }
+    .words span{
+    display: block;
+    height: 100%;
+    padding-left: 20px;
+    color: #14aecf;
+    animation: spinwords 8s infinite;
+    width: fit-content;
+    }
+    @keyframes spinwords{
+    10%{
+    transform: translateY(-105%);
+    }
+    25%{
+    transform: translateY(-100%);
+    }
+    35%{
+    transform: translateY(-205%);
+    }
+    50%{
+    transform: translateY(-200%);
+    }
+    60%{
+    transform: translateY(-305%);
+    }
+    75%{
+    transform: translateY(-300%);
+    }
+    85%{
+    transform: translateY(-405%);
+    }
+    100%{
+    transform: translateY(-400%);
+    }
+    }
+.About{
+    display:flex;
+    flex-direction:column;
+    gap:150px;
+    background-color: #fff7ef;
+    padding-top: 7.5rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 7.5rem;
+    position: relative;
+    top: 0%;
+    color: #000000;
+    border-bottom: #14aecf 2px solid;
+    border-top: 2px solid #14aecf;
+    margin-bottom: -5%; 
+}
+.About-container{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.Aboutimg{
+    background: linear-gradient(to right, #61402d, #e6a37a,#fff7ef);
+    width: 80%;
+    margin-left: 5%;
+}
+.Aboutimg2{
+    background: linear-gradient(to right,#fff7ef, #796153, #000000 ,#000000);
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding-right: 25px;
+}
+.Aboutimg>img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 70px;
+    left: 70px;
+    border: solid 2px #fff7ef;
+}
+.Aboutimg2>img{
+    height: 80%;
+    width: 55%;
+    position: relative;
+    right: 50px;
+    border: solid 2px #fff7ef;
+
+}
+.Description{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:-5px;
+    margin-right: 2%;
+    margin-left: 5%;
+    padding: 6%;
+    padding-top: 3%;
+}
+.Description2{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:-5px;
+    margin-right: 5%;
+    margin-left: 2%;
+    padding: 6%;
+    padding-top: 3%;
+}
+.About-button{
+    background-color: #000000;
+    height: 50px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    width: 90%;
+    margin: 5%;
+    color: rgb(255, 255, 255);
+    border:none;
+    overflow: hidden;
+    font-size: 1.25rem;
+    font-weight: 400;
+    transition: all 0.3s;
+    cursor:pointer;
+}
+.About-button:hover{
+    background-color: #e6ccb2;
+    color: #000000;
+    border: #14aecf 1px solid;
+}
+.Testimonial-container {
+    position: relative;
+    right: 0;
+    left: 0;
+    height: 90vh;
+    overflow:hidden ;
+    background-image: url('https://paultan.org/image/2019/03/Lamborghini-Aventador-SVJ-Roadster-5.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-top: 2px solid #14aecf;
+}
+.Testimonial-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+.Testimonial-content {
+    z-index: 1; 
+    padding: 10%;
+    padding-top: 11%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.Testimonialpage{
+    border-top: #14aecf 2px solid;
+}
+.Testimonialsection{
+    width: 100%;
+    height: 100%;
+    margin-bottom: -5%;
+    background-color: #fff7ef;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: -5%;
+    border-bottom: #14aecf 2px solid;
+}
+.Testimonialsectiontop{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+    margin-bottom: 5%;
+}
+.testopcontent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    background-color: #000000;
+    color: #ffffff;
+}
+.testopcontent>h1{
+    font-style: italic;
+}
+.testopcontent>p{
+    text-align: center;
+    width: 60%;
+    margin-top: -2.5%;
+}
+.testopimg{
+    width: 50%;
+}
+.testopimg>img{
+  height: 100%;  
+  width: 100%;
+}
+#testimg{
+    background-color:#351f10cb ;
+    width: 40%;
+    margin-left: 14%;
+    margin-right: -7%;
+}
+#testimg>img{
+    height: 80%;
+}
+#testdesc{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap:-5px;
+    margin-right: -2%;
+    padding: 6%;
+    padding-top: 3%; 
+}
+#testdesc>p{
+    width: 70%;
+    margin: 0%;
+    padding: 0%;
+    text-align: left;
+    margin-top: -2.5%
+}
+#testdesc2{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap:-5px;
+    margin-left: 10%;
+    padding: 6%;
+    padding-top: 3%; 
+}
+#testdesc2>p{
+    text-align: left;
+    margin-top: -2.5%;
+}
+.testimg2{
+    background: linear-gradient(to right,#fff7ef, #ffc183, #613400);
+    width: 40%;
+    margin-left: -2%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding-right: 45px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.testimg2>img{
+    height: 80%;
+    width: 100%;
+    position: relative;
+    right: 50px;
+    border: 2px solid #fff7ef;
+}
+.Expectations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+#expect{
+    background: url('https://paultan.org/image/2019/03/Lamborghini-Aventador-SVJ-Roadster-5.jpg') center/cover fixed; /* Replace 'your-image-url.jpg' with the actual image URL */
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 5%;
+    border-bottom: #14aecf solid 2px;
+}
+#expect-overlay {
+    background-color: rgba(0, 0, 0, 0.8); /* Black overlay with 0.8 opacity */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2; /* Place overlay above background image */
+}
+#expect>p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+    color: rgb(255, 255, 255); /* Set text color to white */
+    z-index: 3;
+}
+#expectationheading{
+    background: linear-gradient(to bottom, #fff7ef 50%, #f1d0ac 50%);
+}
+.slick-dots li button:before {
+    color: rgb(255, 255, 255) !important;
+    font-size: 0.6rem !important; 
+    z-index: 2 !important;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    font-size: 0.8rem !important; 
+  }
+.blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.blog-container{
+    display: grid;
+    grid-template-columns:50% 50% ;
+}
+.blogcontent {
+    width: 50%;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    margin: 0;
+    padding: 5%;
+}
+.blogtop::before{
+    content: ""; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; 
+    background-image: url('https://paultan.org/image/2019/03/Lamborghini-Aventador-SVJ-Roadster-5.jpg'); 
+    background-size: cover; 
+}
+.blogtop{
+    height:fit-content;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+}
+.blogcontent>h1{
+    text-align: left;
+}
+#continue{
+    color: rgb(231, 231, 231);
+    border: none;
+    background: none;
+    width: max-content;
+    font-size:20px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 1.5% ;
+    margin-bottom: 0%;
+    transition: all 0.3s;
+}
+#continue:hover{
+    color: rgb(255, 255, 255);
+    transform: translateY(-1.5px);
+}
+.blogcards{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin: 5%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+.bloginterior{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 320%;
+}
+.blogcontinue{
+    border: none;
+    background: none;
+    width: max-content;
+    font-size:15px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 1.5% ;
+    margin-bottom: 0%;
+    border-radius: 15px ;
+    color: rgb(88, 153, 153);
+    transition: all 0.3s;
+    }
+    .blogcontinue:hover{
+        color: rgb(46, 109, 109);
+        transform: translateY(-1.5px);
+    }
+.Services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.Services-container {
+    text-align: center;
+    width: 90%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+}
+.Services-button{
+    background-color: #b1855a;
+    height:fit-content;
+    width: fit-content;
+    margin-top: 3%;
+    padding: 2% 25px 2% 25px;
+    color: rgb(255, 255, 255);
+    border:none;
+    overflow: hidden;
+    font-size: 1.25rem;
+    font-weight: 400;
+    transition: all 0.3s;
+    border: 1px #b1855a solid;
+    cursor:pointer;
+}
+.Services-button:hover{
+    background-color:#e6ccb2;
+    color: #66412b;
+    border: #14aecf 1px solid;
+}
+.Contact{
+    height: 100%;
+    width: 100%;
+    background-color: #fff7ef;
+    padding-bottom: 18%;
+    margin-bottom: -5%;
+    border-bottom: 2px solid #14aecf;
+    border-top: 2px solid #14aecf;
+}
+.Contact-container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    gap: 10%;
+}
+.Contactimg{
+    width: 40vw;
+    height: 83vh;
+    background-color: #996b50;
+    border-bottom: 2px solid #14aecf;
+    border-right: 2px solid #14aecf;
+
+}
+.Contactimg>img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 15%;
+    top: 20%;
+    border: 6px solid #fff7ef;
+}
+@media (max-width: 1500px) {
+    .Contactimg>img {
+        height: 95%;
+    }
+}
+@media (max-width: 1400px) {
+    .Contactimg>img {
+        height: 90%;
+    }
+}
+@media (max-width: 1350px) {
+    .Contactimg>img {
+        height: 85%;
+    }
+}
+@media (max-width: 1150px) {
+    .Contactimg>img {
+        height: 75%;
+    }
+}
+@media (max-width: 1100px) {
+    .Contactimg>img {
+        height: 70%;
+    }
+}
+@media (max-width: 900px) {
+    .Contactimg>img {
+        height: 65%;
+    }
+}
+@media (max-width: 850px) {
+    .Contactimg>img {
+        height: 75%;
+    }
+}
+@media (max-width: 800px) {
+    .Contactimg>img {
+        height: 90%;
+    }
+}
+
+.Contactcontent{
+    width: 40%;
+    padding: 0% 10% 0% 0%;
+    margin-left: 5%;
+    margin-top: 8%;
+    text-align: center;
+}
+.Contactcontent>p{
+    text-align: center;
+    margin-top: -2.5%;
+}
+.Contacttxt{
+    border:none;
+    background: none;
+    border-bottom: 2px solid #14aecf;
+    width: 70%;
+    padding-top: 5%;
+    padding-bottom: 0%;
+    margin: 0%;
+    margin-left: 15%;
+    transition: all 0.3s;
+}
+.Contacttxt>p{
+    text-align: center;
+}
+.Contacttxt:hover{
+    border-bottom: #000000 2px solid;
+    color: #14aecf;
+}
+.footer-container{
+    height: 50%;
+    margin-top: -5%;
+    padding: 0%; 
+    overflow: hidden;
+}
+.Getonlist {
+    height: 50vh;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4% 2% 3% 0%;
+    border-top: solid 2px #14aecf;
+}
+
+.form-container {
+    width: 105%;
+    display: flex;
+    justify-content: center;
+}
+
+.listinputs {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.ip {
+    flex: 1; /* Make the inputs flexible to occupy remaining space */
+    height: 70%;
+    border: solid 1px white;
+    background: none;
+    padding: 0 15px;
+    margin: 3% 1% 3% 1%;
+    color: white;
+    font-size: 1.05rem;
+}
+
+.ip::placeholder {
+    color: white;
+}
+
+#Subscribe {
+    flex: 1; /* Make the button flexible to occupy remaining space */
+    height: 70%;
+    width: 100%; /* Set width to 100% */
+    border: none;
+    color: white;
+    font-size: 1.05rem;
+    cursor: pointer; /* Change cursor on hover */
+    text-align: center; /* Center-align the text */
+}
+
+
+.footer {
+    background-color: #b1855a;
+    height: 100%;
+    padding: 1.5%;
+    border-top: 2px solid #14aecf;
+}
+.footer-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-buttons{
+    border: none;
+    background: none;
+    width: max-content;
+    font-size:20px;
+    position: relative;
+    cursor: pointer;
+    margin: 0.5%;
+    padding: 1% ;
+    margin-bottom: 0%;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+    cursor:pointer;
+    }
+    .footer-buttons::after{
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        height: 2px;
+        width: 0;
+        left:5%;
+        background-color: rgb(255, 255, 255);
+        transition: 0.3s;
+        }
+        .footer-buttons:hover::after{
+        width: 90%;
+        }
+.footer-links{
+    margin-top: 5%;
+    text-align: center;
+}
+.social-icons{
+    font-size: 250%;
+    margin-top: 15px;
+    display: flex;
+    gap: 20%;
+    padding-right: 8%;
+}
+.icons{
+    color: aliceblue;
+    transition: all 1s;
+}
+.icons:hover{
+    transform: rotate(360deg) scale(1.2);
+}
+#linkedin{
+    border: none;
+    background: none;
+    width: max-content;
+    font-size:20px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 1.5% ;
+    margin-bottom: 0%;
+    color: rgb(110, 110, 110);
+    transition: all 1s;
+}
+#linkedin:hover{
+    transform: rotate(360deg) scale(1.2);
+    color: #321cff;
+}
+#instagram{
+    border: none;
+    background: none;
+    width: max-content;
+    font-size:20px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 1.5% ;
+    margin-bottom: 0%;
+    color: rgb(52, 52, 52);
+    transition: all 1s;
+}
+#instagram:hover{
+    transform: rotate(360deg) scale(1.2);
+    background: linear-gradient(to right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    color: transparent; 
+}
+
+.Blogspage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8.5%;
+}
+#blogintro{
+    width: 100%;
+    padding-bottom: 3%;
+}
+#blogintrocontent{
+    padding: 12%;
+}
+#blogintrotext{
+    line-height: 2px;
+}
+.blogpg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#abtpg{
+    padding-bottom: 10%;
+    background-color: #fff7ef;
+    padding-top: 2.5%;
+    border-bottom:  2px solid #14aecf;
+}
+#abtpgimg1{
+    height: 500px;
+}
+.Aboutlower{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+    margin-top: -5%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.Aboutpgimg2{
+    background: linear-gradient(to right,#fff7ef, #796153 ,#000000);
+    width: 60%;
+    height: 500px;
+    margin-left: 20%;
+    padding-right: 25px;
+    overflow: visible;
+}
+#abtlowerimg{
+    height: 120%;
+    width: 110%;
+    position: relative;
+    top: 10%;
+    right: 30%;
+    padding: 0%;
+}
+#abtlowerimg2{
+    height: 60%;
+    width: 50%;
+    z-index: 2;
+    position: relative;
+    top: -35%;
+    right: -20%;
+}
+@media (max-width: 900px) {
+    #abtlowerimg2{
+        width: 77.5%;
+    }
+}
+.aboutme{
+    background-color: #f1d0ac;
+    padding: 5% 3% 6% 3%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    border-bottom: #14aecf solid 2px;
+}
+.aboutme>p{
+    text-align: center;
+}
+.aboutmeletter {
+    width: 80%;
+    padding: 7% 10% 10% 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #14aecf solid 2px;
+}
+
+.aboutmeletter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: url('https://paultan.org/image/2019/03/Lamborghini-Aventador-SVJ-Roadster-5.jpg') center/cover no-repeat;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.aboutmeletter::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #fff7ef;
+    z-index: -1;
+}
+.aboutmelettercontent {
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: white;
+    padding: 5% 5% 7% 5%; /* Set text color to white */
+}
+
+.aboutmelettercontent > p {
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    line-height: 40px;
+}
+@media (max-width: 900px) {
+    .aboutmelettercontent>p{
+        line-height: normal;
+    }
+}
+.Resource{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 12%;
+    margin-top: -5%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.Resource-container{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding: 0%;
+    margin: 0%;
+    gap: 5%;
+}
+.rsrc{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+}
+.rsrc>img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+}
+.rsrc>p{
+    font-size:1.2rem;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    cursor: pointer;
+}
+.Bloglayout{
+    display: flex;
+    padding-bottom: 7%;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff7ef;
+    border-bottom: #14aecf solid 2px;
+}
+.Bloglayoutimg{
+    height: 40rem;
+    width: 60%;
+    object-fit: cover;
+}
