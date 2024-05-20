@@ -21,7 +21,7 @@ function Footer() {
     e.preventDefault(); // Prevent default form submission behavior
 
     try {
-      await axios.post("http://localhost:8000/", {
+      await axios.post("https://nutrigetic-1.onrender.com/", {
         name,
         mail,
       });
@@ -30,7 +30,7 @@ function Footer() {
       setMail("");
 
       // Send request to send-email route after saving data
-      await axios.post("http://localhost:8000/send-email");
+      await axios.post("https://nutrigetic-1.onrender.com//send-email");
       alert("Emails sent successfully!");
     } catch (error) {
       console.log(error);

@@ -14,7 +14,7 @@ function Bloglayout() {
     useEffect(() => {
       const fetchBlog = async () => {
         try {
-          const response = await axios.get(`http://localhost:8000/api/blog/${id}`);
+          const response = await axios.get(`https://nutrigetic-1.onrender.com/api/blog/${id}`);
           setBlog(response.data);
         } catch (error) {
           console.log(error);

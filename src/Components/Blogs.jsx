@@ -22,7 +22,7 @@ function Blogsection() {
 
   const fetchBlogs = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/api/blogs').catch((err)=>{
+      const response = await axios.get('https://nutrigetic-1.onrender.com/api/blogs').catch((err)=>{
         throw new Error(err)
       });
       console.log(response)
