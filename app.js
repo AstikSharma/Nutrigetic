@@ -9,8 +9,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
-
-mongoose.connect("mongodb://127.0.0.1:27017/nutrigeticDB", { useNewUrlParser: true })
+const dbURI = process.env.MONGO_URL;
+mongoose.connect(dbURI, { useNewUrlParser: true })
   .then(() => {
     console.log("Connected to MongoDB");
   })
@@ -20,19 +20,19 @@ mongoose.connect("mongodb://127.0.0.1:27017/nutrigeticDB", { useNewUrlParser: tr
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
-  port: 587, // Port for STARTTLS
-  secure: process.env.SECURE == 'true', // Use STARTTLS instead of SSL
+  port: 587, 
+  secure: process.env.SECURE == 'true', 
   auth: {
     user: process.env.USER, // Replace with your Gmail address
     pass: process.env.PASS // Replace with your Gmail password
   },
 });
-
+  
 // Send email function
 async function sendEmail(email) {
   try {
     await transporter.sendMail({
-      from: "",
+      from: "",  
       to: email,
       subject: "Test Email",
       text: "This is a test email sent from nodemailer.",
@@ -41,7 +41,7 @@ async function sendEmail(email) {
   } catch (error) {
     console.error("Error sending email:", error);
   }
-}
+} 
 
 // Route to send emails
 app.post("/send-email", async (req, res) => {
