@@ -15,7 +15,6 @@ function Blogsection() {
     const func=async()=>{
       
       await fetchBlogs();
-      console.log("Lauki lele");
     }
     func();
   }, []);
