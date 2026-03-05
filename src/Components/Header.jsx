@@ -6,14 +6,15 @@ import { useNavigate, useLocation } from 'react-router-dom';
 function Header() {
   const navigate = useNavigate();
   const location = useLocation(); // Get the current location
+
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const navigateToFooter = () => {
     const footerElement = document.getElementById('footer');
     if (footerElement) {
       footerElement.scrollIntoView({ behavior: 'smooth' });
+      setIsSidebarOpen(false);
     }
   };
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
   function toggleSidebar() {
     setIsSidebarOpen(!isSidebarOpen);
     document.body.classList.toggle("no-scroll"); // Optional: prevent scrolling when sidebar is open
@@ -56,11 +57,11 @@ function Header() {
       </div>
       {!isScreenSmaller ? (
         <div className={isSidebarOpen ? "sidebar" : "hide"}>
-          <button onClick={() => navigate("/")} style={{fontWeight:"500", fontSize:"150%"}}>Home</button>
-          <button onClick={() => navigate("/about")} style={{fontWeight:"500", fontSize:"150%"}}>About</button>
-          <button onClick={() => navigate("/Testimonials")} style={{fontWeight:"500", fontSize:"150%"}}>Testimonials</button>
-          <button onClick={() => navigate("/blogs")} style={{fontWeight:"500", fontSize:"150%"}}>Blogs</button>
-          <button onClick={navigateToFooter} style={{fontWeight:"500", fontSize:"150%"}}>Contact Us</button>
+          <button onClick={() => navigate("/")} style={{ fontWeight: "500", fontSize: "150%" }}>Home</button>
+          <button onClick={() => navigate("/about")} style={{ fontWeight: "500", fontSize: "150%" }}>About</button>
+          <button onClick={() => navigate("/Testimonials")} style={{ fontWeight: "500", fontSize: "150%" }}>Testimonials</button>
+          <button onClick={() => navigate("/blogs")} style={{ fontWeight: "500", fontSize: "150%" }}>Blogs</button>
+          <button onClick={navigateToFooter} style={{ fontWeight: "500", fontSize: "150%" }}>Contact Us</button>
         </div>) : ""
       }
 

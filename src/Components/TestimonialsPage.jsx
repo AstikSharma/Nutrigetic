@@ -9,7 +9,7 @@ function Test() {
         query: '(min-width:900px)'
     });
     return (
-        <div>
+        <div style={{width:"100%", overflow:"hidden"}}>
             <Header />
             <div className="Testimonialpage">
                 <div className="Testimonialsectiontop" style={!isScreenSmaller?{display:"flex",flexDirection:"column-reverse"}:{}}>

@@ -426,13 +426,13 @@ button{
   }
 
 .words{
-    overflow: hidden; 
+    overflow-y: hidden;
     height: 60px;
     position: relative;
     left: 0.5%;
-    top: -10px;
+    top: -5px;
     width: fit-content;
-    font-size: 250%;
+    font-size: 2rem;
     font-weight: 200;
     }
     .words span{

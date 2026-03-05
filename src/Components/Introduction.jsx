@@ -13,7 +13,7 @@ function Introduction() {
                 <div className="Introtext" style={!isScreenSmaller?{paddingTop:"12.5%"}:{}}>
                     <p style={{textAlign:"center"}}>Responsive  image:</p>
                     <h1>Quickly prebuilt components, and powerful JavaScript plugins.</h1>
-                <div style={{ display: "flex", flexDirection: "row",justifyContent:"center"}}>
+                <div style={{ display: "flex", flexDirection: "row",justifyContent:"center", width:"120%"}}>
                     <p>I am </p>
                     <div class="words">
                         <span>fantastic</span>

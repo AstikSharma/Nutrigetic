@@ -9,7 +9,7 @@ function Aboutpage() {
         query: '(min-width:900px)'
     });
     return (
-        <div id="about">
+        <div id="about" style={{width:"100%", overflow:"hidden"}}>
             <Header />
             <div className="About-container" id="abtpg" style={!isScreenSmaller ? { flexDirection: "column", display: "flex", justifyContent: "center", alignItems: "center", gap: "4rem",  paddingTop:"15%"} : {}}>
                 <div className="Aboutimg" id="abtpgimg1" style={!isScreenSmaller ? { height: "50vh" } : {}}><img src="https://paultan.org/image/2019/03/Lamborghini-Aventador-SVJ-Roadster-5.jpg" style={{objectFit:"cover"}}/></div>
