@@ -30,7 +30,7 @@ function Footer() {
       setMail("");
 
       // Send request to send-email route after saving data
-      await axios.post("https://nutrigetic-1.onrender.com//send-email");
+      await axios.post("https://nutrigetic-1.onrender.com/send-email");
       alert("Emails sent successfully!");
     } catch (error) {
       console.log(error);

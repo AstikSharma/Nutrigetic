@@ -8,7 +8,13 @@ const { Users, Blog } = require("./mongo");
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+app.use(cors({
+  origin: [
+    "https://nutrigetic.onrender.com"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 const dbURI = process.env.MONGO_URL;
 mongoose.connect(dbURI, { useNewUrlParser: true })
   .then(() => {
