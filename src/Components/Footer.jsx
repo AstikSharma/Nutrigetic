@@ -57,7 +57,7 @@ const navigateToBlogs = () => {
 };
   return (
     <div className="footer-container" id="footer">
-      <div className="Getonlist" style={isScreenSmaller ? { paddingBottom: "18%" } : { paddingTop: "7.5%" }}>
+      <div className="Getonlist" style={isScreenSmaller ? { paddingBottom: "clamp(8rem, 18vh, 12rem)" } : { paddingTop: "7.5%" }}>
         <h1>Let us Contact You</h1>
         <p style={{ textAlign: "center", maxWidth: "80%" }}>
           Freebies and Tips + Tools sent straight to your inbox! I promise not to spam.

@@ -10,7 +10,7 @@ import Blogsection from './Blogs.jsx';
 import Contact from './Contact.jsx';
 function Home(){
     return (
-    <div>
+    <div style={{width:"100%", overflow:"hidden"}}>
         <Header />
         <div style={{height:"100vh"}}> 
         <Introduction/>

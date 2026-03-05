@@ -11,14 +11,12 @@ function Blogsection() {
   const [blogs, setBlogs] = useState([]);
   const isScreenSmaller = useMediaQuery({ query: '(min-width:900px)' });
 
-  useEffect( () => {
-    const func=async()=>{
-      
+  useEffect(()=>{
+    const func = async()=>{
       await fetchBlogs();
-      console.log("Lauki lele");
     }
     func();
-  }, []);
+  },[])
 
   const fetchBlogs = async () => {
     try {

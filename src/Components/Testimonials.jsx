@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import './style.css';
 
 function Testimonials() {
@@ -27,7 +27,7 @@ function Testimonials() {
   }, [isScreenSmaller]);
 
   const settings = {
-    dots: true,
+    
     infinite: true,
     speed: 500,
     slidesToShow: 1,
